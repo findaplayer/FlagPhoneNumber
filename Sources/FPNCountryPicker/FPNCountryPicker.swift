@@ -15,8 +15,8 @@ open class FPNCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDat
 		delegate = self
 	}
 
-	required public init?(coder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
+	required public convenience init?(coder: NSCoder) {
+		self.init(showPhoneNumbers: true)
 	}
 
 	open func setup(repository: FPNCountryRepository) {

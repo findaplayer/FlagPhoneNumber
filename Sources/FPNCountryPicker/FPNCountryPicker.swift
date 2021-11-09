@@ -24,7 +24,7 @@ open class FPNCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDat
 		delegate = self
 	}
 
-	@objc open func setup(repository: FPNCountryRepository) {
+	@objc public func setup(repository: FPNCountryRepository) {
 		self.repository = repository
 
 		reloadAllComponents()

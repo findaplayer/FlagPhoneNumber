@@ -4,7 +4,7 @@ open class FPNCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDat
 
 	open var repository: FPNCountryRepository?
 	open var showPhoneNumbers: Bool
-	open var didSelect: ((FPNCountry) -> Void)?
+	@objc public var didSelect: ((FPNCountry) -> Void)?
 
 	public init(showPhoneNumbers: Bool = true) {
 		self.showPhoneNumbers = showPhoneNumbers

@@ -15,8 +15,13 @@ open class FPNCountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDat
 		delegate = self
 	}
 
-	required public convenience init?(coder: NSCoder) {
-		self.init(showPhoneNumbers: true)
+	required public init?(coder: NSCoder) {
+		self.showPhoneNumbers = true
+		
+		super.init(coder: coder)
+		
+		dataSource = self
+		delegate = self
 	}
 
 	open func setup(repository: FPNCountryRepository) {

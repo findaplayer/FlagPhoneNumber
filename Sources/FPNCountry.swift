@@ -1,11 +1,11 @@
 import UIKit
 
-public struct FPNCountry: Equatable {
+@objc public class FPNCountry: NSObject {
 
 	public var code: FPNCountryCode
-	public var name: String
-	public var phoneCode: String
-	var flag: UIImage?
+	@objc public var name: String
+	@objc public var phoneCode: String
+	@objc var flag: UIImage?
 
 	init(code: String, name: String, phoneCode: String) {
 		self.name = name

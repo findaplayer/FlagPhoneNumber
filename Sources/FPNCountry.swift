@@ -5,7 +5,7 @@ import UIKit
 	public var code: FPNCountryCode
 	@objc public var name: String
 	@objc public var phoneCode: String
-	@objc var flag: UIImage?
+	@objc public var flag: UIImage?
 
 	init(code: String, name: String, phoneCode: String) {
 		self.name = name
